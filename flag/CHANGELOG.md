@@ -1,3 +1,4 @@
-## [0.0.1] - TODO: Add release date.
+## [1.0.0] - Release Flags
 
-* TODO: Describe initial release.
+* add full flag
+* add mini flag

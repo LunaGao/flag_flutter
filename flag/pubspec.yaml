@@ -1,8 +1,8 @@
 name: flag
 description: A flag Flutter package.
 version: 1.0.0
-author: Luna Gao
-homepage:
+author: Luna Gao <gao.xue.qi1@gmail.com>
+homepage: https://github.com/LunaGao/flag_flutter
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

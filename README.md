@@ -2,6 +2,9 @@
 
 A flag Flutter package for Android and iOS.
 
+## ScreenShot
+![Screenshot](./github/image.png)
+
 ## svg source
 * Mini flag svg came from : https://github.com/madebybowtie/FlagKit/tree/master/Assets/SVG
 * Full flag svg came from : https://github.com/hjnilsson/country-flags/tree/master/svg

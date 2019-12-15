@@ -32,15 +32,15 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Column(
-        children: <Widget>[
-          Center(
-            child: Flags.getFullFlag('AD', 100, null),
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            children: <Widget>[
+              Flags.getFullFlag('AD', 100, null),
+              Flags.getMiniFlag('AD', 50, null),
+            ],
           ),
-          Center(
-            child: Flags.getMiniFlag('AD', 100, null),
-          ),
-        ],
+        ),
       ),
     );
   }

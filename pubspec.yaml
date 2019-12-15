@@ -17,4 +17,5 @@ dev_dependencies:
 
 flutter:
   assets:
-    - res/
+    - res/svg2/
+    - res/svg1/

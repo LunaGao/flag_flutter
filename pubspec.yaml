@@ -1,6 +1,6 @@
 name: flag
-description: A flag Flutter package. Use for showing flags. 
-version: 1.0.1
+description: A flag Flutter package. Use for showing flags. Thanks for https://github.com/madebybowtie/FlagKit And https://github.com/hjnilsson/country-flags Projects.
+version: 1.0.2
 homepage: https://github.com/LunaGao/flag_flutter
 
 environment:

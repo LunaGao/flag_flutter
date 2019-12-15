@@ -26,7 +26,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,14 +35,10 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: <Widget>[
           Center(
-              child: FittedBox(
-                child: Flags.getFullFlag('AD', 100, null),
-              )
+            child: Flags.getFullFlag('AD', 100, null),
           ),
           Center(
-              child: FittedBox(
-                child: Flags.getMiniFlag('AD', 100, null),
-              )
+            child: Flags.getMiniFlag('AD', 100, null),
           ),
         ],
       ),

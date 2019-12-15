@@ -1,0 +1,20 @@
+name: flag
+description: A flag Flutter package. Use for showing flags. 
+version: 1.0.1
+homepage: https://github.com/LunaGao/flag_flutter
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^0.15.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - res/

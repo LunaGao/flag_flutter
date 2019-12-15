@@ -8,7 +8,7 @@ class Flags {
 
   /// get mini flag
   static Widget getMiniFlag(String country, double height, double width) {
-    String assetName = 'packages/flag/lib/res/svg1/' + country + '.svg';
+    String assetName = 'packages/flag/res/svg1/' + country + '.svg';
     Widget svg = new SvgPicture.asset(
       assetName,
       semanticsLabel: country,
@@ -20,7 +20,7 @@ class Flags {
 
   /// get full flag
   static Widget getFullFlag(String country, double height, double width) {
-    String assetName = 'packages/flag/lib/res/svg2/' + country.toLowerCase() + '.svg';
+    String assetName = 'packages/flag/res/svg2/' + country.toLowerCase() + '.svg';
     Widget svg = new SvgPicture.asset(
       assetName,
       semanticsLabel: country.toLowerCase(),

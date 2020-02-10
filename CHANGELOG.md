@@ -1,3 +1,8 @@
+## [1.0.3] - Release Flags
+
+* update flutter_svg packages to ^0.17.0
+* fixed https://github.com/LunaGao/flag_flutter/issues/2
+
 ## [1.0.2] - Release Flags
 
 * format code.

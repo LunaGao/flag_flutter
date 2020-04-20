@@ -20,9 +20,9 @@
 # is commented out by default.
 .vscode/
 
-fetch_data/.idea
-fetch_data/flag
-fetch_data/venv
+fetch_data/.idea/
+fetch_data/flag/
+fetch_data/venv/
 
 # Flutter/Dart/Pub related
 **/doc/api/

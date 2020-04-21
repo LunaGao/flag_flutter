@@ -1,6 +1,6 @@
 name: flag
-description: A flag Flutter package. Use for showing flags. Thanks for https://github.com/madebybowtie/FlagKit And https://github.com/hjnilsson/country-flags Projects.
-version: 1.0.3
+description: A flag Flutter package. Use for showing flags. All flags came from https://www.un.org/en/member-states/index.html . 
+version: 2.0.1
 homepage: https://github.com/LunaGao/flag_flutter
 
 environment:
@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_svg: ^0.17.0
+  flutter_svg: ^0.17.4
 
 dev_dependencies:
   flutter_test:
@@ -17,5 +17,4 @@ dev_dependencies:
 
 flutter:
   assets:
-    - res/svg2/
-    - res/svg1/
+    - res/flag/

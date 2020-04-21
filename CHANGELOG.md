@@ -1,3 +1,6 @@
+## [2.0.1] - Release Flags
+* update description in pubspec.yaml file
+
 ## [2.0.0] - Release Flags
 * list of all countries from https://www.un.org/en/member-states/index.html
 * flag from wiki.

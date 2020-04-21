@@ -1,3 +1,7 @@
+## [2.0.0] - Release Flags
+* list of all countries from https://www.un.org/en/member-states/index.html
+* flag from wiki.
+
 ## [1.0.3] - Release Flags
 
 * update flutter_svg packages to ^0.17.0

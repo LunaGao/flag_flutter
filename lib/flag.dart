@@ -5,6 +5,20 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 /// A Flags.
 class Flags {
+
+  /// get mini flag
+  static Widget getFlag(String country, double height, double width) {
+    String countryName = country.toLowerCase();
+    String assetName = 'packages/flag/res/flag/' + countryName + '.svg';
+    Widget svg = new SvgPicture.asset(
+      assetName,
+      semanticsLabel: country,
+      height: height,
+      width: width,
+    );
+    return svg;
+  }
+
   /// get mini flag
   static Widget getMiniFlag(String country, double height, double width) {
     String assetName = 'packages/flag/res/svg1/' + country + '.svg';

@@ -36,6 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Center(
           child: Column(
             children: <Widget>[
+              Flags.getFlag('AD', 100, null),
               Flags.getFullFlag('AD', 100, null),
               Flags.getMiniFlag('AD', 50, null),
             ],

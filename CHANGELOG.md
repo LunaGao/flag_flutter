@@ -1,3 +1,6 @@
+## [2.0.2] - Release Flags
+* add European Union flag.
+
 ## [2.0.1] - Release Flags
 * update description in pubspec.yaml file
 

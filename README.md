@@ -17,6 +17,9 @@ fetch data :python file is `fetch_data/main.py`
 
 List is [un_members.txt](./un_members.txt)
 
+Organisations
+* `eu` European Union. Modify by [art-decor for European Union](https://www.art-decor.org/mediawiki/index.php?title=File:Flag_eu.svg)
+
 ## How to use
 
 `Flags.getFlag(country: COUNTRY_CODE, height: HEIGHT, width: WIDTH),`

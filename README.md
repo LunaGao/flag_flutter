@@ -28,3 +28,6 @@ Such as
 * `Flags.getFlag(country: 'AD', height: 100, width: null)`
 * `Flags.getFlag(country: 'AD', height: null, width: null)`
 * `Flags.getFlag(country: 'AD', height: 10, width: 100, fit: BoxFit.fill)`
+
+## Bugs
+* `brazilian` (br) flag, you can see that the letters are still a bit abnormal.

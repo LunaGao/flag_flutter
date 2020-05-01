@@ -1,4 +1,4 @@
-## [2.0.2] - Release Flags
+## [2.0.3] - Release Flags
 * fixed brazilian flag can not show up error.
 
 ## [2.0.2] - Release Flags

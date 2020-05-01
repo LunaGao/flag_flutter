@@ -4,17 +4,17 @@
   <path id="D" fill-rule="evenodd" d="m-31.5 0h33a30 30 0 0 0 30 -30v-10a30 30 0 0 0 -30 -30h-33zm13-13h19a19 19 0 0 0 19 -19v-6a19 19 0 0 0 -19 -19h-19z"/>
   <path id="E" transform="translate(-31.5)" d="m0 0h63v-13h-51v-18h40v-12h-40v-14h48v-13h-60z"/>
   <path id="e" d="m-26.25 0h52.5v-12h-40.5v-16h33v-12h-33v-11h39.25v-12h-51.25z"/>
-  <g id="G">
-   <clipPath id="gcut">
-    <path d="m-31.5 0v-70h63v70zm31.5-47v12h31.5v-12z"/>
-   </clipPath>
-   <use xlink:href="#O" clip-path="url(#gcut)"/>
-   <rect y="-35" x="5" height="10" width="26.5"/>
-   <rect y="-35" x="21.5" height="35" width="10"/>
-  </g>
   <path id="M" d="m-31.5 0h12v-48l14 48h11l14-48v48h12v-70h-17.5l-14 48-14-48h-17.5z"/>
   <path id="O" fill-rule="evenodd" d="m0 0a31.5 35 0 0 0 0 -70 31.5 35 0 0 0 0 70m0-13a18.5 22 0 0 0 0 -44 18.5 22 0 0 0 0 44"/>
   <path id="P" fill-rule="evenodd" d="m-31.5 0h13v-26h28a22 22 0 0 0 0 -44h-40zm13-39h27a9 9 0 0 0 0 -18h-27z"/>
+  <g id="G">
+    <clipPath id="gcut">
+     <path d="m-31.5 0v-70h63v70zm31.5-47v12h31.5v-12z"/>
+    </clipPath>
+    <use xlink:href="#O" clip-path="url(#gcut)"/>
+    <rect y="-35" x="5" height="10" width="26.5"/>
+    <rect y="-35" x="21.5" height="35" width="10"/>
+   </g>
   <g id="R">
    <use xlink:href="#P"/>
    <path d="m28 0c0-10 0-32-15-32h-19c22 0 22 22 22 32"/>
@@ -36,7 +36,7 @@
   <use id="star4" xlink:href="#star" transform="scale(15)"/>
   <use id="star5" xlink:href="#star" transform="scale(10.5)"/>
  </defs>
- <rect y="-50%" x="-50%" height="100%" fill="#009b3a" width="100%"/>
+ <rect y="-1470" x="-2100" height="2940" fill="#009b3a" width="4200"/>
  <path d="m-1743 0 1743 1113 1743-1113-1743-1113z" fill="#fedf00"/>
  <circle r="735" fill="#002776"/>
  <clipPath id="band">

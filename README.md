@@ -1,6 +1,6 @@
 # flag
 
-A flag Flutter package for Android and iOS.
+A flag Flutter package for Android and iOS. Based by https://github.com/dnfield/flutter_svg
 
 ## ScreenShot
 ![Screenshot](./github/image.png)

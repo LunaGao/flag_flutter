@@ -1,3 +1,6 @@
+## [3.0.0] - Release Flags
+* using `Flag` widget to instead of `Flags.getFlag`
+
 ## [2.0.4] - Release Flags
 * fixed Slovakian flag can not show up error.
 * update flutter version to 1.17.1

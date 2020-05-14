@@ -36,12 +36,19 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Center(
           child: Column(
             children: <Widget>[
-              Flags.getFlag(country: 'AD', height: 100, width: null),
+              Flag(
+                'AD',
+                height: 100,
+              ),
               SizedBox(
                 height: 100,
               ),
-              Flags.getFlag(
-                  country: 'AD', height: 10, width: 100, fit: BoxFit.fill),
+              Flag(
+                'AD',
+                height: 10,
+                width: 100,
+                fit: BoxFit.fill,
+              ),
             ],
           ),
         ),

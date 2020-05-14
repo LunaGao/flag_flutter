@@ -5,7 +5,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 /// A run of Flag.
 class Flag extends StatelessWidget {
-
   /// The flag to display.
   ///
   /// This value listed in https://github.com/LunaGao/flag_flutter/blob/master/un_members.txt.

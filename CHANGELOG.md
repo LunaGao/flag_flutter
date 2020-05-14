@@ -1,3 +1,7 @@
+## [2.0.4] - Release Flags
+* fixed Slovakian flag can not show up error.
+* update flutter version to 1.17.1
+
 ## [2.0.3] - Release Flags
 * fixed brazilian flag can not show up error.
 

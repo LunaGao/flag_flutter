@@ -9,7 +9,8 @@ A flag Flutter package for Android and iOS. Based by https://github.com/dnfield/
 
 ## svg source
 * Flag list came from UN members. [UN Web Site](https://www.un.org/en/member-states/index.html) 
-* Flag svg files came from wike. such as [Antigua and Barbuda](https://commons.wikimedia.org/wiki/File:Flag_of_Antigua_and_Barbuda.svg)
+* A lot of flag svg files came from wike. such as [Antigua and Barbuda](https://commons.wikimedia.org/wiki/File:Flag_of_Antigua_and_Barbuda.svg)
+* Some flag svg files came from [Countryflags](https://www.countryflags.com/en/).
 
 fetch data :python file is `fetch_data/main.py`
 

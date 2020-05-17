@@ -1,3 +1,12 @@
+## [3.0.1] - Release Flags
+* fixed Sri Lanka flag
+* fixed Nepal flag
+* fixed Côte d'Ivoire (Ivory Coast) flag
+* fixed Grenada flag
+* fixed Dominica flag
+* fixed Belarus flag
+* fixed Argentinian flag
+
 ## [3.0.0] - Release Flags
 * using `Flag` widget to instead of `Flags.getFlag`
 

@@ -1,3 +1,7 @@
+## [3.0.2] - Release Flags
+* fixed Palestine Flag
+* fixed Kosovo Flag
+
 ## [3.0.1] - Release Flags
 * fixed Sri Lanka flag
 * fixed Nepal flag

@@ -1,6 +1,6 @@
 # flag
 ![Pub Version](https://img.shields.io/pub/v/flag?style=flat-square)
-[![Bless](https://img.shields.io/badge/bless-God-brightgreen?style=flat-square)](http://lunagao.github.io/BlessYourCodeTag/)
+[![Bless](https://img.shields.io/badge/bless-God-brightgreen?style=flat-square)](https://lunagao.github.io/BlessYourCodeTag/)
 
 A flag Flutter package for Android and iOS. Based by https://github.com/dnfield/flutter_svg
 
@@ -37,3 +37,14 @@ Such as
 
 ## Bugs
 * `brazilian` (br) flag, you can see that the letters are still a bit abnormal.
+
+## Branch & version
+switch Flutter SDK channel
+[Flutter-build-release-channels](https://github.com/flutter/flutter/wiki/Flutter-build-release-channels)
+```
+flutter channel
+flutter channel <channel-name>
+```
+* `develop` --> develop
+* `stable` --> verison X.Y.Z  (using latest `stable` channel Flutter SDK)
+* `master` --> verison X.Y.Z-pre  (using latest `bate` channel Flutter SDK)

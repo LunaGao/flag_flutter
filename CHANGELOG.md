@@ -1,3 +1,6 @@
+## [3.0.4] - Release Flags
+* support Web
+
 ## [4.0.0-pre] - Release Flags
 * support Web
 * update flutter_svg packages to ^0.18.0

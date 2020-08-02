@@ -22,7 +22,7 @@ Replace `Flags.getFlag(country:` to `Flag(`.   :)
 
 ## Flag list
 
-List is [un_members.txt](./un_members.txt)
+[Flag List](https://github.com/LunaGao/flag_flutter/wiki/UN-numbers-list)
 
 Organisations
 * `eu` European Union. Modify by [art-decor for European Union](https://www.art-decor.org/mediawiki/index.php?title=File:Flag_eu.svg)

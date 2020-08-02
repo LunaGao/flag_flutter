@@ -1,11 +1,13 @@
 library flag;
 
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
+
+import './platform/interface_svg.dart'
+    // ignore: uri_does_not_exist
+    if (dart.library.io) './platform/mobile_svg.dart'
+    // ignore: uri_does_not_exist
+    if (dart.library.html) './platform/web_svg.dart';
 
 /// A run of Flag.
 class Flag extends StatelessWidget {
@@ -46,26 +48,12 @@ class Flag extends StatelessWidget {
   Widget build(BuildContext context) {
     String countryName = country.toLowerCase();
     String assetName = 'packages/flag/res/flag/' + countryName + '.svg';
-    if (kIsWeb) {
-      return Image.network(
-        assetName,
-        width: width,
-        height: height,
-        semanticLabel: country,
-        fit: fit,
-      );
-    }
-    if (Platform.isIOS || Platform.isAndroid) {
-      return Container(
-        width: width,
-        height: height,
-        child: SvgPicture.asset(
-          assetName,
-          semanticsLabel: country,
-          fit: fit,
-        ),
-      );
-    }
-    return Container();
+    return PlatformSvg(
+      assetName,
+      width: width,
+      height: height,
+      semanticLabel: country,
+      fit: fit,
+    );
   }
 }

@@ -1,3 +1,12 @@
+## [4.0.0-pre] - Release Flags
+* support Web
+* update flutter_svg packages to ^0.18.0
+
+## [3.0.3] - Release Flags
+* fixed Palestine Flag (ps.svg)
+* fixed Kosovo Flag (xk.svg)
+* support Web
+
 ## [3.0.2-pre] - Release Flags
 * fixed Palestine Flag (ps.svg)
 * fixed Kosovo Flag (xk.svg)

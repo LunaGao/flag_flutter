@@ -1,7 +1,8 @@
-## [3.0.2] - Release Flags
+## [3.0.2-pre] - Release Flags
 * fixed Palestine Flag (ps.svg)
 * fixed Kosovo Flag (xk.svg)
 * fixed [#25](https://github.com/LunaGao/flag_flutter/issues/25)
+* support Web
 
 ## [3.0.1] - Release Flags
 * fixed Sri Lanka flag

@@ -2,10 +2,11 @@
 ![Pub Version](https://img.shields.io/pub/v/flag?style=flat-square)
 [![Bless](https://img.shields.io/badge/bless-God-brightgreen?style=flat-square)](https://lunagao.github.io/BlessYourCodeTag/)
 
-A flag Flutter package for Android and iOS. Based by https://github.com/dnfield/flutter_svg
+A flag Flutter package for `Android` / `iOS` / `Web`. Mobile Based by https://github.com/dnfield/flutter_svg , Web Based by `Image.network`
 
 ## ScreenShot
 ![Screenshot](./github/image.png)
+![Screenshot](./github/image_web.jpg)
 
 ## svg source
 * Flag list came from UN members. [UN Web Site](https://www.un.org/en/member-states/index.html) 
@@ -47,4 +48,10 @@ flutter channel <channel-name>
 ```
 * `develop` --> develop
 * `stable` --> verison X.Y.Z  (using latest `stable` channel Flutter SDK)
+```
+Channel stable, 1.17.5
+```
 * `master` --> verison X.Y.Z-pre  (using latest `bate` channel Flutter SDK)
+```
+Channel beta, 1.20.0-7.3.pre
+```

@@ -1,3 +1,5 @@
+![Logo](./.github/flag.png)
+
 # flag
 ![Pub Version](https://img.shields.io/pub/v/flag?style=flat-square)
 [![Bless](https://img.shields.io/badge/bless-God-brightgreen?style=flat-square)](https://lunagao.github.io/BlessYourCodeTag/)

@@ -1,3 +1,9 @@
+## [3.1.0] - Release Flags
+* upgraded flutter_svg packages to ^0.19.1
+* upgraded flutter to 1.22.2 (stable)
+* AndroidX Migration
+* Upgraded 1.12 Android projects
+
 ## [3.0.5] - Release Flags
 * update flutter_svg packages to ^0.18.0
 

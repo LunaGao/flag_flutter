@@ -29,6 +29,11 @@ Replace `Flags.getFlag(country:` to `Flag(`.   :)
 Organisations
 * `eu` European Union. Modify by [art-decor for European Union](https://www.art-decor.org/mediawiki/index.php?title=File:Flag_eu.svg)
 
+Disputed territories
+* `hk` Hong Kong. Special province of China.
+* `eh` Western Sahara. Claimed by Morocco.
+* `tw` Taiwan. Claimed by China.
+
 ## How to use
 
 `Flag(COUNTRY_CODE, height: HEIGHT, width: WIDTH),`

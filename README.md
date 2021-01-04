@@ -6,13 +6,13 @@
 
 A flag Flutter package for `Android` / `iOS` / `Web`. Mobile Based by https://github.com/dnfield/flutter_svg , Web Based by `Image.network`
 
-## ScreenShot
+## Screenshot
 ![Screenshot](./github/image.png)
 ![Screenshot](./github/image_web.jpg)
 
-## svg source
+## Svg sources
 * Flag list came from UN members. [UN Web Site](https://www.un.org/en/member-states/index.html) 
-* A lot of flag svg files came from wike. such as [Antigua and Barbuda](https://commons.wikimedia.org/wiki/File:Flag_of_Antigua_and_Barbuda.svg)
+* A lot of flag svg files came from wikimedia, such as [Antigua and Barbuda](https://commons.wikimedia.org/wiki/File:Flag_of_Antigua_and_Barbuda.svg)
 * Some flag svg files came from [Countryflags](https://www.countryflags.com/en/).
 
 fetch data :python file is `fetch_data/main.py`
@@ -30,7 +30,8 @@ Organisations
 * `eu` European Union. Modify by [art-decor for European Union](https://www.art-decor.org/mediawiki/index.php?title=File:Flag_eu.svg)
 
 Disputed territories
-* `hk` Hong Kong. Special province of China.
+* `hk` Hong Kong. Special Administrative Region of China.
+* `mo` Macau. Special Administrative Region of China.
 * `eh` Western Sahara. Claimed by Morocco.
 * `tw` Taiwan. Claimed by China.
 

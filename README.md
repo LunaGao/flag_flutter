@@ -57,7 +57,7 @@ flutter channel <channel-name>
 * `develop` --> develop
 * `stable` --> verison X.Y.Z  (using latest `stable` channel Flutter SDK)
 ```
-Channel stable, 1.22.2
+Channel stable, 1.22.5
 ```
 * `master` --> verison X.Y.Z-pre  (using latest `bate` channel Flutter SDK)
 ```

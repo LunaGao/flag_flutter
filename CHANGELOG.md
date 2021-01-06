@@ -1,3 +1,6 @@
+## [3.2.0] - Release Flags
+* Add Disputed territories. [PR39](https://github.com/LunaGao/flag_flutter/pull/39) by [markusgeert](https://github.com/markusgeert)
+
 ## [3.1.0] - Release Flags
 * upgraded flutter_svg packages to ^0.19.1
 * upgraded flutter to 1.22.2 (stable)

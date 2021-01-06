@@ -1,3 +1,7 @@
+## [4.0.0-nullsafety] - Release Flags
+* support nullsafety
+* update flutter_svg packages to ^0.18.0
+
 ## [3.2.0] - Release Flags
 * Add Disputed territories. [PR39](https://github.com/LunaGao/flag_flutter/pull/39) by [markusgeert](https://github.com/markusgeert)
 

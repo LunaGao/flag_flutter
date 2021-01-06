@@ -54,6 +54,7 @@ switch Flutter SDK channel
 flutter channel
 flutter channel <channel-name>
 ```
+Or using [fvm](https://github.com/leoafarias/fvm)
 * `develop` --> develop
 * `stable` --> verison X.Y.Z  (using latest `stable` channel Flutter SDK)
 ```
@@ -61,5 +62,10 @@ Channel stable, 1.22.5
 ```
 * `master` --> verison X.Y.Z-pre  (using latest `bate` channel Flutter SDK)
 ```
-Channel beta, 1.20.0-7.3.pre
+Channel beta, 1.25.0-8.2.pre
 ```
+
+## Upload to PUB
+
+* `flutter pub publish --dry-run`
+* `flutter pub publish`

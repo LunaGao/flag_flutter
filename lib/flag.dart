@@ -7,7 +7,7 @@ import './platform/interface_svg.dart'
     // ignore: uri_does_not_exist
     if (dart.library.io) './platform/mobile_svg.dart'
     // ignore: uri_does_not_exist
-    if (dart.library.html) './platform/web_svg.dart';
+    if (dart.library.js) './platform/web_svg.dart';
 
 /// A run of Flag.
 class Flag extends StatelessWidget {

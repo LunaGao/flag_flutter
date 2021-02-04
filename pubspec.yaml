@@ -1,6 +1,6 @@
 name: flag
 description: A flag Flutter package. Use for showing flags. All flags came from https://www.un.org/en/member-states/index.html . 
-version: 3.2.0
+version: 3.2.1
 homepage: https://github.com/LunaGao/flag_flutter
 
 environment:

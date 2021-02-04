@@ -33,7 +33,7 @@ class PlatformSvg extends Interface.PlatformSvg {
   @override
   Widget build(BuildContext context) {
     return Image.network(
-      assetName,
+      "assets/$assetName",
       width: width,
       height: height,
       semanticLabel: semanticLabel,

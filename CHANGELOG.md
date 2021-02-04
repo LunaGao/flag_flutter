@@ -1,3 +1,6 @@
+## [3.2.1] - Release Flags
+* Fixed [#41](https://github.com/LunaGao/flag_flutter/issues/41) 
+
 ## [3.2.0] - Release Flags
 * Add Disputed territories. [PR39](https://github.com/LunaGao/flag_flutter/pull/39) by [markusgeert](https://github.com/markusgeert)
 

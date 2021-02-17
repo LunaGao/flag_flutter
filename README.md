@@ -35,6 +35,9 @@ Disputed territories
 * `eh` Western Sahara. Claimed by Morocco.
 * `tw` Taiwan. Claimed by China.
 
+Undisputed territories which are non-UN state
+* `va` Vatican City. Govern by the Holy See.
+
 ## How to use
 
 `Flag(COUNTRY_CODE, height: HEIGHT, width: WIDTH),`

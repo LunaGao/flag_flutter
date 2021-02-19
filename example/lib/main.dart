@@ -62,9 +62,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 fit: BoxFit.fill,
                 replacement: Text('ACC not found'),
               ),
-              if (Flag.flagsCode.contains('ACC'))
+              if (Flag.flagsCode.contains('AF'.toLowerCase()))
                 Flag(
-                  'ACC',
+                  'af',
                   height: 10,
                   width: 100,
                   fit: BoxFit.fill,

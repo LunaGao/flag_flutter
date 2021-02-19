@@ -33,4 +33,9 @@ class PlatformSvg extends StatelessWidget {
   Widget build(BuildContext context) {
     throw UnimplementedError();
   }
+
+  static Future<void> preloadFlag(
+      BuildContext context, String assetName) async {
+    throw UnimplementedError();
+  }
 }

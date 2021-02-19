@@ -46,7 +46,7 @@ class Flag extends StatelessWidget {
   ///              fit: BoxFit.fill,
   ///            ),
   /// ```
-  static List<String> flagsCode = [
+  static const List<String> flagsCode = [
     'ad',
     'ae',
     'af',
@@ -261,7 +261,7 @@ class Flag extends StatelessWidget {
     this.height,
     this.width,
     this.fit = BoxFit.contain,
-    this.replacement,
+    this.replacement = const SizedBox.shrink(),
   })  : assert(
           country != null,
           'The Country must be provided.',
@@ -271,16 +271,23 @@ class Flag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String countryName = country.toLowerCase();
-    String assetName = 'packages/flag/res/flag/' + countryName + '.svg';
-    if (!flagsCode.contains(countryName)) {
-      return replacement ?? const SizedBox.shrink();
+
+    return flagsCode.contains(countryName)
+        ? PlatformSvg(
+            'packages/flag/res/flag/$countryName.svg',
+            width: width,
+            height: height,
+            semanticLabel: country,
+            fit: fit,
+          )
+        : replacement;
+  }
+
+  static Future<void> preloadFlag(
+      {BuildContext context, List<String> flagList = flagsCode}) async {
+    for (final flag in flagList) {
+      await PlatformSvg.preloadFlag(
+          context, 'packages/flag/res/flag/$flag.svg');
     }
-    return PlatformSvg(
-      assetName,
-      width: width,
-      height: height,
-      semanticLabel: country,
-      fit: fit,
-    );
   }
 }

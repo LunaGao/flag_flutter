@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'interface_svg.dart' as Interface;
 
 class PlatformSvg extends Interface.PlatformSvg {
@@ -39,5 +40,10 @@ class PlatformSvg extends Interface.PlatformSvg {
       semanticLabel: semanticLabel,
       fit: fit,
     );
+  }
+
+  static Future<void> preloadFlag(
+      BuildContext context, String assetName) async {
+    await precacheImage(NetworkImage("assets/$assetName"), context);
   }
 }

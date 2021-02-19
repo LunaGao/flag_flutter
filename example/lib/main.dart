@@ -49,6 +49,26 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: 100,
                 fit: BoxFit.fill,
               ),
+              Flag(
+                'ACC',
+                height: 10,
+                width: 100,
+                fit: BoxFit.fill,
+              ),
+              Flag(
+                'ACC',
+                height: 10,
+                width: 100,
+                fit: BoxFit.fill,
+                replacement: Text('ACC not found'),
+              ),
+              if (Flag.flagsCode.contains('ACC'))
+                Flag(
+                  'ACC',
+                  height: 10,
+                  width: 100,
+                  fit: BoxFit.fill,
+                ),
             ],
           ),
         ),

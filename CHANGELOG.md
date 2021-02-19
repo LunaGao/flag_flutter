@@ -1,3 +1,6 @@
+## [3.2.2] - Release Flags
+* Add Vatican City. [#43](https://github.com/LunaGao/flag_flutter/pull/43) by [mdccxv](https://github.com/mdccxv)
+
 ## [3.2.1] - Release Flags
 * Fixed [#41](https://github.com/LunaGao/flag_flutter/issues/41) 
 

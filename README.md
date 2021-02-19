@@ -1,7 +1,7 @@
 ![Logo](./.github/flag.png)
 
 # flag
-![Pub Version](https://img.shields.io/pub/v/flag?style=flat-square)
+[![Pub Version](https://img.shields.io/pub/v/flag?style=flat-square)](https://pub.dev/packages/flag)
 [![Bless](https://img.shields.io/badge/bless-God-brightgreen?style=flat-square)](https://lunagao.github.io/BlessYourCodeTag/)
 
 A flag Flutter package for `Android` / `iOS` / `Web`. Mobile Based by https://github.com/dnfield/flutter_svg , Web Based by `Image.network`

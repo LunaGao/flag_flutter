@@ -17,10 +17,10 @@ class Flag extends StatelessWidget {
   final String country;
 
   /// If non-null, requires the child to have exactly this height.
-  final double height;
+  final double? height;
 
   /// If non-null, requires the child to have exactly this width.
-  final double width;
+  final double? width;
 
   /// How to inscribe the flag into the space allocated during layout.
   ///
@@ -257,16 +257,12 @@ class Flag extends StatelessWidget {
   /// The [country] parameter must not be null.
   Flag(
     this.country, {
-    Key key,
+    Key? key,
     this.height,
     this.width,
     this.fit = BoxFit.contain,
     this.replacement = const SizedBox.shrink(),
-  })  : assert(
-          country != null,
-          'The Country must be provided.',
-        ),
-        super(key: key);
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -283,8 +279,10 @@ class Flag extends StatelessWidget {
         : replacement;
   }
 
-  static Future<void> preloadFlag(
-      {BuildContext context, List<String> flagList = flagsCode}) async {
+  static Future<void> preloadFlag({
+    required BuildContext context,
+    List<String> flagList = flagsCode,
+  }) async {
     for (final flag in flagList) {
       await PlatformSvg.preloadFlag(
           context, 'packages/flag/res/flag/$flag.svg');

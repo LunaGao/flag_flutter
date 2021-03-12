@@ -1,3 +1,8 @@
+## [5.0.0-nullsafety.0]
+* updated flutter_svg to 0.21.0-nullsafety.0
+* Minimum version of dart set to 2.12.0
+* Migrated to nullsafety
+
 ## [4.0.0] - Release Flags
 * Support Flutter 2
 

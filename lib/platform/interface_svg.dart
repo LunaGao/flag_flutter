@@ -7,10 +7,10 @@ class PlatformSvg extends StatelessWidget {
   final String semanticLabel;
 
   /// If non-null, requires the child to have exactly this height.
-  final double height;
+  final double? height;
 
   /// If non-null, requires the child to have exactly this width.
-  final double width;
+  final double? width;
 
   /// How to inscribe the flag into the space allocated during layout.
   ///
@@ -22,11 +22,11 @@ class PlatformSvg extends StatelessWidget {
 
   PlatformSvg(
     this.assetName, {
-    Key key,
-    this.semanticLabel,
+    Key? key,
+    this.semanticLabel = '',
     this.height,
     this.width,
-    this.fit,
+    this.fit = BoxFit.contain,
   }) : super(key: key);
 
   @override

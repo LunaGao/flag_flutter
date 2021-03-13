@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -28,7 +28,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  bool displayFlagPicker;
+  bool? displayFlagPicker;
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 FlagPicker(
                   width: 50,
                   height: 300,
-                  preCache: displayFlagPicker,
+                  preCache: displayFlagPicker!,
                 ),
             ],
           ),
@@ -111,11 +111,11 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class FlagPicker extends StatefulWidget {
-  const FlagPicker({Key key, this.width, this.height, this.preCache = false})
+  const FlagPicker({Key? key, this.width, this.height, this.preCache = false})
       : super(key: key);
 
-  final double width;
-  final double height;
+  final double? width;
+  final double? height;
   final bool preCache;
 
   @override
@@ -123,8 +123,8 @@ class FlagPicker extends StatefulWidget {
 }
 
 class _FlagPicker extends State<FlagPicker> {
-  FixedExtentScrollController _controller;
-  int _currentIndex;
+  late FixedExtentScrollController _controller;
+  late int _currentIndex;
 
   @override
   void initState() {

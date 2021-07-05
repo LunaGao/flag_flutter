@@ -1,16 +1,18 @@
+![Logo](./.github/flag.png)
+
 # flag
-![Pub Version](https://img.shields.io/pub/v/flag?style=flat-square)
+[![Pub Version](https://img.shields.io/pub/v/flag?style=flat-square)](https://pub.dev/packages/flag)
 [![Bless](https://img.shields.io/badge/bless-God-brightgreen?style=flat-square)](https://lunagao.github.io/BlessYourCodeTag/)
 
 A flag Flutter package for `Android` / `iOS` / `Web`. Mobile Based by https://github.com/dnfield/flutter_svg , Web Based by `Image.network`
 
-## ScreenShot
+## Screenshot
 ![Screenshot](./github/image.png)
 ![Screenshot](./github/image_web.jpg)
 
-## svg source
+## Svg sources
 * Flag list came from UN members. [UN Web Site](https://www.un.org/en/member-states/index.html) 
-* A lot of flag svg files came from wike. such as [Antigua and Barbuda](https://commons.wikimedia.org/wiki/File:Flag_of_Antigua_and_Barbuda.svg)
+* A lot of flag svg files came from wikimedia, such as [Antigua and Barbuda](https://commons.wikimedia.org/wiki/File:Flag_of_Antigua_and_Barbuda.svg)
 * Some flag svg files came from [Countryflags](https://www.countryflags.com/en/).
 
 fetch data :python file is `fetch_data/main.py`
@@ -22,10 +24,19 @@ Replace `Flags.getFlag(country:` to `Flag(`.   :)
 
 ## Flag list
 
-List is [un_members.txt](./un_members.txt)
+[Flag List](https://github.com/LunaGao/flag_flutter/wiki/UN-numbers-list)
 
 Organisations
 * `eu` European Union. Modify by [art-decor for European Union](https://www.art-decor.org/mediawiki/index.php?title=File:Flag_eu.svg)
+
+Disputed territories
+* `hk` Hong Kong. Special Administrative Region of China.
+* `mo` Macau. Special Administrative Region of China.
+* `eh` Western Sahara. Claimed by Morocco.
+* `tw` Taiwan. Claimed by China.
+
+Undisputed territories which are non-UN state
+* `va` Vatican City. Govern by the Holy See.
 
 ## How to use
 
@@ -49,7 +60,7 @@ flutter channel <channel-name>
 * `develop` --> develop
 * `stable` --> verison X.Y.Z  (using latest `stable` channel Flutter SDK)
 ```
-Channel stable, 1.17.5
+Channel stable, 2.0.0
 ```
 * `master` --> verison X.Y.Z-pre  (using latest `bate` channel Flutter SDK)
 ```

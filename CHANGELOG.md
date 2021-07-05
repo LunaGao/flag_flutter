@@ -1,3 +1,31 @@
+## [5.0.0-nullsafety.0]
+* updated flutter_svg to 0.21.0-nullsafety.0
+* Minimum version of dart set to 2.12.0
+* Migrated to nullsafety
+
+## [4.0.0] - Release Flags
+* Support Flutter 2
+
+## [3.2.2] - Release Flags
+* Add Vatican City. [#43](https://github.com/LunaGao/flag_flutter/pull/43) by [mdccxv](https://github.com/mdccxv)
+* Fixed [#44](https://github.com/LunaGao/flag_flutter/issues/44)
+* Add preCache and widget replacement [PR45](https://github.com/LunaGao/flag_flutter/pull/45)
+
+## [3.2.1] - Release Flags
+* Fixed [#41](https://github.com/LunaGao/flag_flutter/issues/41) 
+
+## [3.2.0] - Release Flags
+* Add Disputed territories. [PR39](https://github.com/LunaGao/flag_flutter/pull/39) by [markusgeert](https://github.com/markusgeert)
+
+## [3.1.0] - Release Flags
+* upgraded flutter_svg packages to ^0.19.1
+* upgraded flutter to 1.22.2 (stable)
+* AndroidX Migration
+* Upgraded 1.12 Android projects
+
+## [3.0.5] - Release Flags
+* update flutter_svg packages to ^0.18.0
+
 ## [3.0.4] - Release Flags
 * support Web
 

@@ -1,3 +1,9 @@
+## [5.0.1]
+* updated flutter_svg to 0.22.0
+* add enum_to_string library
+* Fixed [#50](https://github.com/LunaGao/flag_flutter/issues/50)
+* Fixed [#53](https://github.com/LunaGao/flag_flutter/issues/53)
+
 ## [5.0.0-nullsafety.0]
 * updated flutter_svg to 0.21.0-nullsafety.0
 * Minimum version of dart set to 2.12.0

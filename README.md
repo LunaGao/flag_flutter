@@ -40,12 +40,17 @@ Undisputed territories which are non-UN state
 
 ## How to use
 
-`Flag(COUNTRY_CODE, height: HEIGHT, width: WIDTH),`
+`Flag.fromCode(FlagsCode.COUNTRY_CODE, height: HEIGHT, width: WIDTH),`
+`Flag.fromString(COUNTRY_CODE, height: HEIGHT, width: WIDTH),`
 
 Such as
-* `Flag('AD', height: 100, width: null)`
-* `Flag('AD', height: null, width: null)`
-* `Flag('AD', height: 10, width: 100, fit: BoxFit.fill)`
+* `Flag.fromCode(FlagsCode.AD, height: 100, width: null)`
+* `Flag.fromString('AD', height: null, width: null)`
+* `Flag.fromString('AD', height: 10, width: 100, fit: BoxFit.fill)`
+
+## Web Error
+
+If you got an `ImageCodecException` issue on web, maybe [this issue](https://github.com/LunaGao/flag_flutter/issues/49) can solve your problem.
 
 ## Bugs
 * `brazilian` (br) flag, you can see that the letters are still a bit abnormal.

@@ -41,23 +41,23 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              Flag(
-                'AD',
+              Flag.fromCode(
+                FlagsCode.AD,
                 height: 100,
               ),
-              Flag(
-                'AD',
+              Flag.fromCode(
+                FlagsCode.AD,
                 height: 10,
                 width: 100,
                 fit: BoxFit.fill,
               ),
-              Flag(
+              Flag.fromString(
                 'ACC',
                 height: 10,
                 width: 100,
                 fit: BoxFit.fill,
               ),
-              Flag(
+              Flag.fromString(
                 'ACC',
                 height: 10,
                 width: 100,
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 replacement: Text('ACC not found'),
               ),
               if (Flag.flagsCode.contains('AF'.toLowerCase()))
-                Flag(
+                Flag.fromString(
                   'af',
                   height: 10,
                   width: 100,
@@ -167,8 +167,11 @@ class _FlagPicker extends State<FlagPicker> {
             print(value);
           });
         },
-        itemBuilder: (context, index) =>
-            Center(child: Flag(Flag.flagsCode[index])),
+        itemBuilder: (context, index) => Center(
+          child: Flag.fromString(
+            Flag.flagsCode[index],
+          ),
+        ),
       ),
     );
   }

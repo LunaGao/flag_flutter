@@ -59,7 +59,7 @@ class PlatformSvg extends Interface.PlatformSvg {
     isCanvasKit
         ? await precachePicture(
             ExactAssetPicture(
-              SvgPicture.svgStringDecoder,
+              SvgPicture.svgStringDecoderBuilder,
               assetName,
             ),
             context)

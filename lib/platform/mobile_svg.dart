@@ -49,7 +49,7 @@ class PlatformSvg extends Interface.PlatformSvg {
       BuildContext context, String assetName) async {
     await precachePicture(
         ExactAssetPicture(
-          SvgPicture.svgStringDecoder,
+          SvgPicture.svgStringDecoderBuilder,
           assetName,
         ),
         context);

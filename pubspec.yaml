@@ -4,12 +4,12 @@ version: 5.0.1
 homepage: https://github.com/LunaGao/flag_flutter
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_svg: ^0.23.0+1
+  flutter_svg: ^1.0.0
   enum_to_string: ^2.0.1
 
 dev_dependencies:

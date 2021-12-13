@@ -17,7 +17,7 @@ class Flag extends StatelessWidget {
   final String country;
 
   /// The flag to display. Enum value for `FlagsCode`.
-  /// If this inputed, `country` will be ingnore.
+  /// If this is set, `country` will be ignored.
   ///
   /// This value listed in https://github.com/LunaGao/flag_flutter/blob/master/un_members.txt.
   final FlagsCode countryCode;
@@ -41,7 +41,7 @@ class Flag extends StatelessWidget {
   /// FlagsCode.
   ///
   /// You can using `Flag.flagsCode.contains('YOUR_FLAG_CODE'.toLowerCase())` to
-  /// check if the Flagcode included in the list.
+  /// check if the flag code included in the list.
   /// Example:
   /// ```
   /// if (Flag.flagsCode.contains('AF'.toLowerCase()))

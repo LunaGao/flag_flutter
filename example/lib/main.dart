@@ -51,11 +51,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: 100,
                 fit: BoxFit.fill,
               ),
-              Flag.fromString(
-                'ACC',
-                height: 10,
-                width: 100,
+              Flag.fromCode(
+                FlagsCode.AD,
+                height: 50,
+                width: 50,
                 fit: BoxFit.fill,
+                flagSize: FlagSize.size_1x1,
+                borderRadius: 25,
+              ),
+              Flags.fromCode(
+                [
+                  FlagsCode.AD,
+                  FlagsCode.AE,
+                  FlagsCode.AF,
+                ],
+                width: 200,
+                height: 100,
               ),
               Flag.fromString(
                 'ACC',

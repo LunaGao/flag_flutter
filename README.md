@@ -22,7 +22,7 @@ ISO 3166-1-alpha-2 Flags
 Note: 
 
 Organisations
-* `eu` European Union. Modify by [art-decor for European Union](https://www.art-decor.org/mediawiki/index.php?title=File:Flag_eu.svg)
+* `eu` European Union.
 
 Disputed territories
 * `hk` Hong Kong. Special Administrative Region of China.
@@ -37,6 +37,7 @@ Undisputed territories which are non-UN state
 
 `Flag.fromCode(FlagsCode.COUNTRY_CODE, height: HEIGHT, width: WIDTH),`
 `Flag.fromString(COUNTRY_CODE, height: HEIGHT, width: WIDTH),`
+`Flags.fromCode([FlagsCode.GB, FlagsCode.US], height: 100, width: 100 * 4 / 3),`
 
 Such as
 * `Flag.fromCode(FlagsCode.AD, height: 100, width: null)`

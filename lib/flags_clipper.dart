@@ -5,8 +5,8 @@ class FlagsClipper extends CustomClipper<Path> {
   Path getClip(Size size) {
     return Path()
       ..lineTo(0, 0)
-      ..lineTo(size.width, 0)
-      ..lineTo(size.width / 2, size.height)
+      ..lineTo(size.width * 2 / 3, 0)
+      ..lineTo(size.width * 1 / 3, size.height)
       ..lineTo(0, size.height);
   }
 

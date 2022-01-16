@@ -1,3 +1,11 @@
+## [6.0.0]
+* add 1x1 and 4x3 flags
+* change SVG source: https://github.com/lipis/flag-icons
+* using flutter_svg instead of Image.network on web
+* add rounded flags
+* fixed [#60](https://github.com/LunaGao/flag_flutter/issues/60)
+* add two flags in one place [#55](https://github.com/LunaGao/flag_flutter/issues/55)
+
 ## [5.0.2]
 * updated flutter_svg to 1.0.0
 

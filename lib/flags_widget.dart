@@ -63,14 +63,14 @@ class Flags extends StatelessWidget {
   const Flags.fromCode(
     this.countiyCodes, {
     Key? key,
-    this.height = 100,
-    this.width = 100,
+    this.height = 300,
+    this.width = 400,
     this.replacement = const SizedBox.shrink(),
     this.flagSize = FlagSize.size_4x3,
     this.borderRadius,
   })  : assert(
-          countiyCodes.length > 1,
-          'countiyCodes count must be lager than 1.',
+          countiyCodes.length == 2,
+          'countiyCodes count must be 2.',
         ),
         this.counties = const [],
         super(key: key);
@@ -83,14 +83,14 @@ class Flags extends StatelessWidget {
   const Flags.fromString(
     this.counties, {
     Key? key,
-    this.height = 100,
-    this.width = 100,
+    this.height = 300,
+    this.width = 400,
     this.replacement = const SizedBox.shrink(),
     this.flagSize = FlagSize.size_4x3,
     this.borderRadius,
   })  : assert(
-          counties.length > 1,
-          'counties count must be lager than 1.',
+          counties.length == 2,
+          'counties count must be 2.',
         ),
         this.countiyCodes = const [],
         super(key: key);
@@ -107,7 +107,8 @@ class Flags extends StatelessWidget {
     }
 
     List<Widget> flagWidgets = [];
-    for (String countryName in countryNames) {
+    for (int i = 0; i < countryNames.length; i++) {
+      var countryName = countryNames[i];
       String assetName = 'packages/flag/res/4x3/$countryName.svg';
       if (flagSize == FlagSize.size_1x1) {
         assetName = 'packages/flag/res/1x1/$countryName.svg';
@@ -115,23 +116,37 @@ class Flags extends StatelessWidget {
 
       if (!flagsCode.contains(countryName)) {
         flagWidgets.add(replacement);
-      }
-      flagWidgets.add(
-        Container(
-          width: width / countryNames.length,
-          height: height,
-          child: DecoratedBox(
-            decoration: BoxDecoration(),
-            child: ClipPath(
-              clipper: FlagsClipper(),
+      } else {
+        if (i == 0) {
+          flagWidgets.add(
+            Container(
+              width: width,
+              height: height,
               child: SvgPicture.asset(
                 assetName,
                 fit: BoxFit.fill,
               ),
             ),
-          ),
-        ),
-      );
+          );
+        } else {
+          flagWidgets.add(
+            Container(
+              width: width,
+              height: height,
+              child: DecoratedBox(
+                decoration: BoxDecoration(),
+                child: ClipPath(
+                  clipper: FlagsClipper(),
+                  child: SvgPicture.asset(
+                    assetName,
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ),
+            ),
+          );
+        }
+      }
     }
 
     Widget returnWidget = Stack(
@@ -145,20 +160,6 @@ class Flags extends StatelessWidget {
       );
     } else {
       return returnWidget;
-    }
-  }
-
-  static Future<void> preloadFlag({
-    required BuildContext context,
-    List<String> flagList = flagsCode,
-  }) async {
-    for (final flag in flagList) {
-      await precachePicture(
-          ExactAssetPicture(
-            SvgPicture.svgStringDecoderBuilder,
-            'packages/flag/res/4x3/$flag.svg',
-          ),
-          context);
     }
   }
 }

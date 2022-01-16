@@ -43,10 +43,3 @@ Such as
 * `Flag.fromCode(FlagsCode.AD, height: 100, width: null)`
 * `Flag.fromString('AD', height: null, width: null)`
 * `Flag.fromString('AD', height: 10, width: 100, fit: BoxFit.fill)`
-
-## Web Error
-
-If you got an `ImageCodecException` issue on web, maybe [this issue](https://github.com/LunaGao/flag_flutter/issues/49) can solve your problem.
-
-## Bugs
-* `brazilian` (br) flag, you can see that the letters are still a bit abnormal.

@@ -2,12 +2,7 @@ import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flag/flag_enum.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
-import './platform/interface_svg.dart'
-    // ignore: uri_does_not_exist
-    if (dart.library.io) './platform/mobile_svg.dart'
-    // ignore: uri_does_not_exist
-    if (dart.library.js) './platform/web_svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 /// A run of Flag.
 class Flag extends StatelessWidget {
@@ -17,7 +12,6 @@ class Flag extends StatelessWidget {
   final String country;
 
   /// The flag to display. Enum value for `FlagsCode`.
-  /// If this is set, `country` will be ignored.
   ///
   /// This value listed in https://github.com/LunaGao/flag_flutter/blob/master/un_members.txt.
   final FlagsCode countryCode;
@@ -37,6 +31,13 @@ class Flag extends StatelessWidget {
   ///
   /// The default value is [const SizedBox.shrink()].
   final Widget replacement;
+
+  /// This is the flag aspect ratio
+  ///
+  /// Default value is [FlagSize.size_4x3]
+  final FlagSize flagSize;
+
+  final double? borderRadius;
 
   /// FlagsCode.
   ///
@@ -59,29 +60,6 @@ class Flag extends StatelessWidget {
   /// If the [fit] argument is null, the text will use the [BoxFit.contain].
   ///
   /// The [country] parameter must not be null.
-  @Deprecated(
-    '\nUse Flag.fromString / Flag.fromCode instead. \n'
-    'This feature was deprecated after v6.0.0',
-  )
-  const Flag(
-    this.country, {
-    Key? key,
-    this.height,
-    this.width,
-    this.fit = BoxFit.contain,
-    this.replacement = const SizedBox.shrink(),
-  })  : assert(
-          country != '',
-          'A non-null Country Code String must be provided to a Flag widget.',
-        ),
-        this.countryCode = FlagsCode.NULL,
-        super(key: key);
-
-  /// Creates a flag widget.
-  ///
-  /// If the [fit] argument is null, the text will use the [BoxFit.contain].
-  ///
-  /// The [country] parameter must not be null.
   const Flag.fromCode(
     this.countryCode, {
     Key? key,
@@ -89,6 +67,8 @@ class Flag extends StatelessWidget {
     this.width,
     this.fit = BoxFit.contain,
     this.replacement = const SizedBox.shrink(),
+    this.flagSize = FlagSize.size_4x3,
+    this.borderRadius,
   })  : assert(
           countryCode != FlagsCode.NULL,
           'A non-NULL Country Code must be provided to a Flag widget.',
@@ -108,6 +88,8 @@ class Flag extends StatelessWidget {
     this.width,
     this.fit = BoxFit.contain,
     this.replacement = const SizedBox.shrink(),
+    this.flagSize = FlagSize.size_4x3,
+    this.borderRadius,
   })  : assert(
           country != '',
           'A non-null Country Code String must be provided to a Flag widget.',
@@ -123,15 +105,33 @@ class Flag extends StatelessWidget {
           EnumToString.convertToString(this.countryCode).toLowerCase();
     }
 
-    return flagsCode.contains(countryName)
-        ? PlatformSvg(
-            'packages/flag/res/flag/$countryName.svg',
-            width: width,
-            height: height,
-            semanticLabel: country,
-            fit: fit,
-          )
-        : replacement;
+    String assetName = 'packages/flag/res/4x3/$countryName.svg';
+    if (flagSize == FlagSize.size_1x1) {
+      assetName = 'packages/flag/res/1x1/$countryName.svg';
+    }
+
+    if (!flagsCode.contains(countryName)) {
+      return replacement;
+    }
+
+    var returnWidget = Container(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        assetName,
+        semanticsLabel: country,
+        fit: fit,
+      ),
+    );
+
+    if (borderRadius != null) {
+      return ClipRRect(
+        borderRadius: BorderRadius.circular(borderRadius!),
+        child: returnWidget,
+      );
+    } else {
+      return returnWidget;
+    }
   }
 
   static Future<void> preloadFlag({
@@ -139,8 +139,12 @@ class Flag extends StatelessWidget {
     List<String> flagList = flagsCode,
   }) async {
     for (final flag in flagList) {
-      await PlatformSvg.preloadFlag(
-          context, 'packages/flag/res/flag/$flag.svg');
+      await precachePicture(
+          ExactAssetPicture(
+            SvgPicture.svgStringDecoderBuilder,
+            'packages/flag/res/4x3/$flag.svg',
+          ),
+          context);
     }
   }
 }

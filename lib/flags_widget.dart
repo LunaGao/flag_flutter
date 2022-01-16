@@ -19,12 +19,12 @@ class Flags extends StatelessWidget {
 
   /// Requires the child to have exactly this height.
   ///
-  /// Default is 100
+  /// Default is 300
   final double height;
 
   /// Requires the child to have exactly this width.
   ///
-  /// Default is 100
+  /// Default is 400
   final double width;
 
   /// Replacement Widget, if flag not found.

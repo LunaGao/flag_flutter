@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-vc" viewBox="0 0 512 512">
-  <g fill-rule="evenodd" stroke-width="1pt">
+  <g fill-rule="evenodd" stroke-width="1.3333333333333333px">
     <path fill="#f4f100" d="M0 0h510.4v512H0z"/>
     <path fill="#199a00" d="M385.6 0H512v512H385.6z"/>
     <path fill="#0058aa" d="M0 0h126.4v512H0z"/>

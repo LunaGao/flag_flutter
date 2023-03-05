@@ -1,6 +1,6 @@
 name: flag
 description: A flag Flutter package. Use for showing flags. All flags came from https://github.com/lipis/flag-icons/releases/tag/v4.1.4 .
-version: 6.0.0
+version: 6.0.1
 homepage: https://github.com/LunaGao/flag_flutter
 
 environment:
@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_svg: ^1.0.3
+  flutter_svg: ^2.0.2
   enum_to_string: ^2.0.1
 
 dev_dependencies:

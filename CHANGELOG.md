@@ -1,3 +1,7 @@
+## [6.0.1]
+* [Fixed Many SVG Issues #78](https://github.com/LunaGao/flag_flutter/pull/78)
+* Updated Flutter SVG Version.
+
 ## [6.0.0]
 * add 1x1 and 4x3 flags
 * change SVG source: https://github.com/lipis/flag-icons

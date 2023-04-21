@@ -149,7 +149,7 @@ class _FlagPicker extends State<FlagPicker> {
   void didChangeDependencies() {
     super.didChangeDependencies();
     if (widget.preCache) {
-      Flag.preloadFlag(context: context);
+      //Flag.preloadFlag(context: context);
     }
   }
 

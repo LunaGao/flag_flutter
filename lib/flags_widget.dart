@@ -149,17 +149,15 @@ class Flags extends StatelessWidget {
       }
     }
 
-    Widget returnWidget = Stack(
-      children: flagWidgets,
-    );
+    Widget buildChild() => Stack(children: flagWidgets);
 
     if (borderRadius != null) {
       return ClipRRect(
         borderRadius: BorderRadius.circular(borderRadius!),
-        child: returnWidget,
+        child: buildChild(),
       );
     } else {
-      return returnWidget;
+      return buildChild();
     }
   }
 }

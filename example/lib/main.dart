@@ -110,7 +110,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 FlagPicker(
                   width: 50,
                   height: 300,
-                  preCache: displayFlagPicker!,
                 ),
             ],
           ),
@@ -121,12 +120,14 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class FlagPicker extends StatefulWidget {
-  const FlagPicker({Key? key, this.width, this.height, this.preCache = false})
-      : super(key: key);
+  const FlagPicker({
+    Key? key,
+    this.width,
+    this.height,
+  }) : super(key: key);
 
   final double? width;
   final double? height;
-  final bool preCache;
 
   @override
   _FlagPicker createState() => _FlagPicker();
@@ -143,14 +144,6 @@ class _FlagPicker extends State<FlagPicker> {
     _controller = FixedExtentScrollController(
       initialItem: _currentIndex,
     );
-  }
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    if (widget.preCache) {
-      //Flag.preloadFlag(context: context);
-    }
   }
 
   @override

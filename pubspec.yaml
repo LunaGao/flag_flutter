@@ -1,10 +1,10 @@
 name: flag
 description: A flag Flutter package. Use for showing flags. All flags came from https://github.com/lipis/flag-icons/releases/tag/v4.1.4 .
-version: 6.0.0
+version: 7.0.0
 homepage: https://github.com/LunaGao/flag_flutter
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=2.12.0 <4.0.0'
 
 dependencies:
   flutter:

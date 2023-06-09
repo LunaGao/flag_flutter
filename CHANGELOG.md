@@ -1,3 +1,6 @@
+## [7.0.0]
+* Upgrade svg package and remove caching
+
 ## [6.0.0]
 * add 1x1 and 4x3 flags
 * change SVG source: https://github.com/lipis/flag-icons

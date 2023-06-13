@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Flags.fromCode(
                 [
                   FlagsCode.GB,
-                  FlagsCode.US,
+                  FlagsCode.CN,
                 ],
                 height: 100,
                 width: 100 * 4 / 3,

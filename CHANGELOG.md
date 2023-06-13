@@ -1,3 +1,6 @@
+## [7.0.1]
+* update README.md file
+
 ## [7.0.0]
 * Upgrade svg package and remove caching
 

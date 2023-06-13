@@ -7,8 +7,7 @@
 A flag Flutter package for `Android` / `iOS` / `Web`. Based by https://github.com/dnfield/flutter_svg .
 
 ## Screenshot
-![Screenshot](./github/image.png)
-![Screenshot](./github/image_web.jpg)
+![Screenshot](./.github/image.jpeg)
 
 ## Svg sources
 * All flags came from https://github.com/lipis/flag-icons/releases/tag/v4.1.4
@@ -35,9 +34,32 @@ Undisputed territories which are non-UN state
 
 ## How to use
 
-`Flag.fromCode(FlagsCode.COUNTRY_CODE, height: HEIGHT, width: WIDTH),`
-`Flag.fromString(COUNTRY_CODE, height: HEIGHT, width: WIDTH),`
-`Flags.fromCode([FlagsCode.GB, FlagsCode.US], height: 100, width: 100 * 4 / 3),`
+```
+Flag.fromCode(
+    FlagsCode.COUNTRY_CODE, 
+    height: HEIGHT, 
+    width: WIDTH,
+)
+```
+
+```
+Flag.fromString(
+    COUNTRY_CODE, 
+    height: HEIGHT, 
+    width: WIDTH,
+)
+```
+
+```
+Flags.fromCode(
+    [
+        FlagsCode.GB, 
+        FlagsCode.US
+    ], 
+    height: 100, 
+    width: 100 * 4 / 3,
+)
+```
 
 Such as
 * `Flag.fromCode(FlagsCode.AD, height: 100, width: null)`

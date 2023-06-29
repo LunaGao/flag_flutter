@@ -1,4 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icons-gd" viewBox="0 0 512 512">
+  
+  <path fill="#ce1126" d="M0 0h512v512H0z" />
+  <path fill="#007a5e" d="M71.7 71.7h368.6v368.6H71.7z" />
+  <path fill="#fcd116" d="M71.7 71.7h368.6L71.7 440.4h368.6z" />
   <defs>
     <g id="c">
       <g id="b">
@@ -12,9 +16,6 @@
     </g>
     <use xlink:href="#c" id="d" width="100%" height="100%" transform="translate(256 35.9) scale(33.28)" />
   </defs>
-  <path fill="#ce1126" d="M0 0h512v512H0z" />
-  <path fill="#007a5e" d="M71.7 71.7h368.6v368.6H71.7z" />
-  <path fill="#fcd116" d="M71.7 71.7h368.6L71.7 440.4h368.6z" />
   <circle cx="255.9" cy="256.1" r="61.4" fill="#ce1126" />
   <use xlink:href="#c" width="100%" height="100%" transform="translate(256 256) scale(56.32)" />
   <use xlink:href="#d" width="100%" height="100%" x="-100" transform="translate(-16.4 -.1)" />

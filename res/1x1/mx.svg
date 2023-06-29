@@ -1,13 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icons-mx" viewBox="0 0 512 512">
-  <defs>
-    <linearGradient id="a">
-      <stop offset="0" stop-color="#fff"/>
-      <stop offset="1" stop-color="#f15770"/>
-    </linearGradient>
-    <radialGradient xlink:href="#a" id="b" cx="842.3" cy="103.7" r="25.9" gradientTransform="matrix(.11321 .02876 -.02762 .11359 180.2 193.2)" gradientUnits="userSpaceOnUse"/>
-    <radialGradient xlink:href="#a" id="c" cx="651.5" cy="550.5" r="25.9" gradientTransform="matrix(-.10753 -.04307 .03971 -.09991 375.3 9.8)" gradientUnits="userSpaceOnUse"/>
-    <radialGradient xlink:href="#a" id="d" cx="380.8" cy="740.4" r="25.9" gradientTransform="matrix(.06029 .00225 -.00274 .11843 377.4 -120)" gradientUnits="userSpaceOnUse"/>
-  </defs>
+  
   <path fill="#ce1126" d="M341.3 0H512v512H341.3z"/>
   <path fill="#fff" d="M170.7 0h170.6v512H170.7z"/>
   <path fill="#006847" d="M0 0h170.7v512H0z"/>
@@ -375,4 +367,13 @@
   <path fill="#f9c83a" d="m235.7 220 .3.3-.4-.1.1-.2z"/>
   <path fill="#8f4620" d="M236 220.3h-.6l.2-.1h.4z"/>
   <path fill="#977c2e" d="M240.7 255.3s.4 0 .5-.3c.2-.2 0 .3 0 .3l-.3.1-.2-.1z"/>
+  <defs>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#f15770"/>
+    </linearGradient>
+    <radialGradient xlink:href="#a" id="b" cx="842.3" cy="103.7" r="25.9" gradientTransform="matrix(.11321 .02876 -.02762 .11359 180.2 193.2)" gradientUnits="userSpaceOnUse"/>
+    <radialGradient xlink:href="#a" id="c" cx="651.5" cy="550.5" r="25.9" gradientTransform="matrix(-.10753 -.04307 .03971 -.09991 375.3 9.8)" gradientUnits="userSpaceOnUse"/>
+    <radialGradient xlink:href="#a" id="d" cx="380.8" cy="740.4" r="25.9" gradientTransform="matrix(.06029 .00225 -.00274 .11843 377.4 -120)" gradientUnits="userSpaceOnUse"/>
+  </defs>
 </svg>

@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-cg" viewBox="0 0 512 512">
-
-  <g fill-rule="evenodd" stroke-width="1.3333333333333333px" clip-path="url(#a)" transform="translate(-119.5) scale(1.032)">
-    <path fill="#ff0" d="M0 0h744v496H0z"/>
-    <path fill="#00ca00" d="M0 0v496L496 0H0z"/>
-    <path fill="red" d="M248 496h496V0L248 496z"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g fill-rule="evenodd" stroke-width="1.333" clip-path="url(#a)" transform="translate(-119.5)scale(1.032)"><path fill="#ff0" d="M0 0h744v496H0z"/><path fill="#00ca00" d="M0 0v496L496 0z"/><path fill="red" d="M248 496h496V0z"/></g></svg>

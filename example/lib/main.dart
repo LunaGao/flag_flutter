@@ -2,6 +2,7 @@ import 'package:example/restart_widget.dart';
 import 'package:flag/flag.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() => runApp(RestartWidget(child: MyApp()));
 
@@ -74,6 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 fit: BoxFit.fill,
                 replacement: Text('ACC not found'),
               ),
+              Divider(),
               if (Flag.flagsCode.contains('AF'.toLowerCase()))
                 Flag.fromString(
                   'af',
@@ -81,6 +83,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: 100,
                   fit: BoxFit.fill,
                 ),
+              // Static asset path examples
+              _buildPathExample(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -114,6 +118,140 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  /// Builds examples showing flags alongside their asset paths
+  Widget _buildPathExample() {
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Static Asset Path Examples:',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+          ),
+          SizedBox(height: 12),
+
+          // Japan flag (4x3) example
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                height: 40,
+                width: 53,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey.shade300),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: SvgPicture.asset(
+                  Flag.getAssetPath('jp'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+              SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Japan (4x3):',
+                        style: TextStyle(fontWeight: FontWeight.w500)),
+                    Text(
+                      Flag.getAssetPath('jp'),
+                      style: TextStyle(
+                          fontSize: 11,
+                          fontFamily: 'monospace',
+                          color: Colors.blue),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+
+          SizedBox(height: 16),
+
+          // Canada flag (1x1) example
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                height: 40,
+                width: 40,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey.shade300),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: SvgPicture.asset(
+                    Flag.getAssetPathFromCode(FlagsCode.CA,
+                        flagSize: FlagSize.size_1x1),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ),
+              SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Canada (1x1):',
+                        style: TextStyle(fontWeight: FontWeight.w500)),
+                    Text(
+                      Flag.getAssetPathFromCode(FlagsCode.CA,
+                          flagSize: FlagSize.size_1x1),
+                      style: TextStyle(
+                          fontSize: 11,
+                          fontFamily: 'monospace',
+                          color: Colors.blue),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+
+          SizedBox(height: 16),
+
+          // United States flag (4x3) example
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                height: 40,
+                width: 53,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey.shade300),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: SvgPicture.asset(
+                  Flag.getAssetPathFromCode(FlagsCode.US),
+                  fit: BoxFit.fill,
+                ),
+              ),
+              SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('United States (4x3):',
+                        style: TextStyle(fontWeight: FontWeight.w500)),
+                    Text(
+                      Flag.getAssetPathFromCode(FlagsCode.US),
+                      style: TextStyle(
+                          fontSize: 11,
+                          fontFamily: 'monospace',
+                          color: Colors.blue),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

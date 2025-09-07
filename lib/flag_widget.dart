@@ -55,6 +55,50 @@ class Flag extends StatelessWidget {
   /// ```
   static const List<String> flagsCode = baseFlagsCode;
 
+  /// Generates the asset path for a flag SVG from a country code string.
+  ///
+  /// [countryCode] The country code string (e.g., 'us', 'gb', 'fr')
+  /// [flagSize] The flag size/aspect ratio (defaults to 4x3)
+  ///
+  /// Returns the asset path string that can be used with AssetImage or SvgPicture.asset
+  ///
+  /// Example:
+  /// ```
+  /// String assetPath = Flag.getAssetPath('us');
+  /// // Returns: 'packages/flag/res/4x3/us.svg'
+  ///
+  /// String squareAssetPath = Flag.getAssetPath('us', flagSize: FlagSize.size_1x1);
+  /// // Returns: 'packages/flag/res/1x1/us.svg'
+  /// ```
+  static String getAssetPath(String countryCode,
+      {FlagSize flagSize = FlagSize.size_4x3}) {
+    String countryName = countryCode.toLowerCase();
+    String folderName = flagSize == FlagSize.size_1x1 ? '1x1' : '4x3';
+    return 'packages/flag/res/$folderName/$countryName.svg';
+  }
+
+  /// Generates the asset path for a flag SVG from a FlagsCode enum.
+  ///
+  /// [countryCode] The FlagsCode enum value
+  /// [flagSize] The flag size/aspect ratio (defaults to 4x3)
+  ///
+  /// Returns the asset path string that can be used with AssetImage or SvgPicture.asset
+  ///
+  /// Example:
+  /// ```
+  /// String assetPath = Flag.getAssetPathFromCode(FlagsCode.US);
+  /// // Returns: 'packages/flag/res/4x3/us.svg'
+  ///
+  /// String squareAssetPath = Flag.getAssetPathFromCode(FlagsCode.US, flagSize: FlagSize.size_1x1);
+  /// // Returns: 'packages/flag/res/1x1/us.svg'
+  /// ```
+  static String getAssetPathFromCode(FlagsCode countryCode,
+      {FlagSize flagSize = FlagSize.size_4x3}) {
+    String countryName =
+        EnumToString.convertToString(countryCode).toLowerCase();
+    return getAssetPath(countryName, flagSize: flagSize);
+  }
+
   /// Creates a flag widget.
   ///
   /// If the [fit] argument is null, the text will use the [BoxFit.contain].
@@ -99,15 +143,18 @@ class Flag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String assetName;
+
+    if (this.countryCode != FlagsCode.NULL) {
+      assetName = getAssetPathFromCode(this.countryCode, flagSize: flagSize);
+    } else {
+      assetName = getAssetPath(this.country, flagSize: flagSize);
+    }
+
     String countryName = country.toLowerCase();
     if (this.countryCode != FlagsCode.NULL) {
       countryName =
           EnumToString.convertToString(this.countryCode).toLowerCase();
-    }
-
-    String assetName = 'packages/flag/res/4x3/$countryName.svg';
-    if (flagSize == FlagSize.size_1x1) {
-      assetName = 'packages/flag/res/1x1/$countryName.svg';
     }
 
     if (!flagsCode.contains(countryName)) {

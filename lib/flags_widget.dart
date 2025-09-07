@@ -1,6 +1,7 @@
 import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flag/flag_enum.dart';
 import 'package:flag/flags_clipper.dart';
+import 'package:flag/flag_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -109,10 +110,7 @@ class Flags extends StatelessWidget {
     List<Widget> flagWidgets = [];
     for (int i = 0; i < countryNames.length; i++) {
       var countryName = countryNames[i];
-      String assetName = 'packages/flag/res/4x3/$countryName.svg';
-      if (flagSize == FlagSize.size_1x1) {
-        assetName = 'packages/flag/res/1x1/$countryName.svg';
-      }
+      String assetName = Flag.getAssetPath(countryName, flagSize: flagSize);
 
       if (!flagsCode.contains(countryName)) {
         flagWidgets.add(replacement);

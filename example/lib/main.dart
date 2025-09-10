@@ -44,11 +44,11 @@ class _MyHomePageState extends State<MyHomePage> {
               spacing: 10.0,
               children: [
                 Flag.fromCode(
-                  FlagsCode.XX,
+                  FlagsCode.GB,
                   height: 100,
                 ),
                 Flag.fromCode(
-                  FlagsCode.NP,
+                  FlagsCode.GR,
                   height: 100,
                 ),
                 Flag.fromCode(

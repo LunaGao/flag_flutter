@@ -4,7 +4,7 @@
 [![Pub Version](https://img.shields.io/pub/v/flag?style=flat-square)](https://pub.dev/packages/flag)
 [![Bless](https://img.shields.io/badge/bless-God-brightgreen?style=flat-square)](https://lunagao.github.io/BlessYourCodeTag/)
 
-A flag Flutter package for `Android` / `iOS` / `Web`. Based by https://github.com/dnfield/flutter_svg .
+A flag Flutter package for `Android` / `iOS` / `Web`. Based by [package:flutter_svg](https://github.com/flutter/packages/tree/main/third_party/packages/flutter_svg) .
 
 ## Screenshot
 ![Screenshot](./.github/image.jpeg)

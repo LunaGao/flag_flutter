@@ -38,85 +38,91 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: SafeArea(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              Flag.fromCode(
-                FlagsCode.KI,
-                height: 100,
-              ),
-              Flag.fromCode(
-                FlagsCode.AD,
-                height: 10,
-                width: 100,
-                fit: BoxFit.fill,
-              ),
-              Flag.fromCode(
-                FlagsCode.AD,
-                height: 50,
-                width: 50,
-                fit: BoxFit.fill,
-                flagSize: FlagSize.size_1x1,
-                borderRadius: 25,
-              ),
-              Flags.fromCode(
-                [
-                  FlagsCode.GB,
-                  FlagsCode.CN,
-                ],
-                height: 100,
-                width: 100 * 4 / 3,
-              ),
-              Flag.fromString(
-                'ACC',
-                height: 10,
-                width: 100,
-                fit: BoxFit.fill,
-                replacement: Text('ACC not found'),
-              ),
-              Divider(),
-              if (Flag.flagsCode.contains('AF'.toLowerCase()))
-                Flag.fromString(
-                  'af',
+        child: ListView(
+          children: <Widget>[
+            Column(
+              spacing: 10.0,
+              children: [
+                Flag.fromCode(
+                  FlagsCode.XX,
+                  height: 100,
+                ),
+                Flag.fromCode(
+                  FlagsCode.NP,
+                  height: 100,
+                ),
+                Flag.fromCode(
+                  FlagsCode.AD,
                   height: 10,
                   width: 100,
                   fit: BoxFit.fill,
                 ),
-              // Static asset path examples
-              _buildPathExample(),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  ElevatedButton(
-                    onPressed: displayFlagPicker == null
-                        ? () => setState(() {
-                              displayFlagPicker = false;
-                            })
-                        : null,
-                    child: Text('no preCache'),
-                  ),
-                  ElevatedButton(
-                    onPressed: displayFlagPicker == null
-                        ? () => setState(() {
-                              displayFlagPicker = true;
-                            })
-                        : null,
-                    child: Text('preCache'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () => RestartWidget.restartApp(context),
-                    child: Text('restart'),
-                  ),
-                ],
-              ),
-              if (displayFlagPicker != null)
-                FlagPicker(
+                Flag.fromCode(
+                  FlagsCode.AD,
+                  height: 50,
                   width: 50,
-                  height: 300,
+                  fit: BoxFit.fill,
+                  flagSize: FlagSize.size_1x1,
+                  borderRadius: 25,
                 ),
-            ],
-          ),
+                Flags.fromCode(
+                  [
+                    FlagsCode.GB,
+                    FlagsCode.CN,
+                  ],
+                  height: 100,
+                  width: 100 * 4 / 3,
+                ),
+                Flag.fromString(
+                  'ACC',
+                  height: 10,
+                  width: 100,
+                  fit: BoxFit.fill,
+                  replacement: Text('ACC not found'),
+                ),
+                Divider(),
+                if (Flag.flagsCode.contains('AF'.toLowerCase()))
+                  Flag.fromString(
+                    'af',
+                    height: 10,
+                    width: 100,
+                    fit: BoxFit.fill,
+                  ),
+              ],
+            ),
+            // Static asset path examples
+            _buildPathExample(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton(
+                  onPressed: displayFlagPicker == null
+                      ? () => setState(() {
+                            displayFlagPicker = false;
+                          })
+                      : null,
+                  child: Text('no preCache'),
+                ),
+                ElevatedButton(
+                  onPressed: displayFlagPicker == null
+                      ? () => setState(() {
+                            displayFlagPicker = true;
+                          })
+                      : null,
+                  child: Text('preCache'),
+                ),
+                ElevatedButton(
+                  onPressed: () => RestartWidget.restartApp(context),
+                  child: Text('restart'),
+                ),
+              ],
+            ),
+            if (displayFlagPicker != null)
+              FlagPicker(
+                width: 50,
+                height: 300,
+              ),
+          ],
         ),
       ),
     );

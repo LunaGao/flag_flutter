@@ -4,6 +4,7 @@ enum FlagSize {
 }
 
 /// Flags Code Enum
+/// Country Codes Alpha-2
 ///
 enum FlagsCode {
   NULL,

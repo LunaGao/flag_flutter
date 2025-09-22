@@ -65,3 +65,11 @@ Such as
 * `Flag.fromCode(FlagsCode.AD, height: 100, width: null)`
 * `Flag.fromString('AD', height: null, width: null)`
 * `Flag.fromString('AD', height: 10, width: 100, fit: BoxFit.fill)`
+
+## for developers
+How to publish 
+https://docs.flutter.dev/packages-and-plugins/developing-packages#publish
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=LunaGao/flag_flutter&type=Date)](https://www.star-history.com/#LunaGao/flag_flutter&Date)

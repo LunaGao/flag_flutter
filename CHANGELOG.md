@@ -1,12 +1,13 @@
-## [7.1.1]
+## [7.0.2]
+* fixed [#96](https://github.com/LunaGao/flag_flutter/issues/96) Syrian flag is not updated .[PR97](https://github.com/LunaGao/flag_flutter/pull/97).
+
+## [7.0.1]
 * [#93](https://github.com/LunaGao/flag_flutter/pull/93) Added methods to generate asset paths for flags based on country codes and sizes.
 * [#93](https://github.com/LunaGao/flag_flutter/pull/93) Enhanced the Flag widget to utilize the new asset path methods.
 * [#93](https://github.com/LunaGao/flag_flutter/pull/93) Improved widget tests to cover new functionalities and ensure robustness.
 * [#93](https://github.com/LunaGao/flag_flutter/pull/93) Updated iOS deployment target to 12.0 and adjusted project settings accordingly.
 * [#93](https://github.com/LunaGao/flag_flutter/pull/93) added some widget tests to verify that all flags can be rendered.
 * [#90](https://github.com/LunaGao/flag_flutter/pull/90) reduce the size of the SVGs.
-
-## [7.0.1]
 * update README.md file
 
 ## [7.0.0]

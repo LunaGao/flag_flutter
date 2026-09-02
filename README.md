@@ -10,7 +10,7 @@ A flag Flutter package for `Android` / `iOS` / `Web`. Based by [package:flutter_
 ![Screenshot](./.github/image.jpeg)
 
 ## Svg sources
-* All flags came from https://github.com/lipis/flag-icons/releases/tag/v4.1.4
+* All flags came from https://github.com/lipis/flag-icons/releases/tag/v7.5.0
 
 Thanks the great project [flag-icons](https://github.com/lipis/flag-icons).
 

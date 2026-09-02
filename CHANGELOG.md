@@ -1,3 +1,9 @@
+## [7.1.0]
+* Synced all SVG assets with [flag-icons](https://github.com/lipis/flag-icons) [v7.5.0](https://github.com/lipis/flag-icons/releases/tag/v7.5.0) (was v4.1.4).
+* Added 8 new flag codes: `ARAB`, `ASEAN`, `EAC`, `ES_PV`, `PC`, `SH_AC`, `SH_HL`, `SH_TA`.
+* Kept `AC` and `TA` for backwards compatibility (renamed to `sh-ac` / `sh-ta` upstream); their artwork is now in sync with the renamed upstream files.
+* Kept `EA` for backwards compatibility (removed upstream).
+
 ## [7.0.2]
 * fixed [#96](https://github.com/LunaGao/flag_flutter/issues/96) Syrian flag is not updated .[PR97](https://github.com/LunaGao/flag_flutter/pull/97).
 

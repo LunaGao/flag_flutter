@@ -1,3 +1,7 @@
+## [7.2.0]
+* Upgrade flutter_svg to 2.3.0
+* [#98](https://github.com/LunaGao/flag_flutter/pull/98) Sync flag assets with flag-icons v7.5.0.
+
 ## [7.1.0]
 * Synced all SVG assets with [flag-icons](https://github.com/lipis/flag-icons) [v7.5.0](https://github.com/lipis/flag-icons/releases/tag/v7.5.0) (was v4.1.4).
 * Added 8 new flag codes: `ARAB`, `ASEAN`, `EAC`, `ES_PV`, `PC`, `SH_AC`, `SH_HL`, `SH_TA`.
